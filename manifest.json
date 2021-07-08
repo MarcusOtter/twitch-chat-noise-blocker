@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Twitch chat activity blocker",
+    "description": "Block Twitch messages for new subs, gift subs, channel points predictions, etc.",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": ["*://*.twitch.tv/*"],
+            "css": ["styles.css"]
+        }
+    ]
+}
